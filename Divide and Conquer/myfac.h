@@ -1,3 +1,5 @@
+# include <stdio.h>
+
 template <class T>
     void swap(T& a, T& b) {
         T tmp = a;

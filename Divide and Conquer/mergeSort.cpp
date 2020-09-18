@@ -13,10 +13,7 @@ void mergeSort(int* a, int *b, int x, int y)
         else
             b[k] = a[j++];
     }
-    for(int k = x; k <= y; k++)
-    {
-        a[k] = b[k];
-    }
+    for(int k = x; k <= y; k++) a[k] = b[k];
 }
 int main()
 {

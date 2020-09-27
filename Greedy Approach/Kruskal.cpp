@@ -10,8 +10,7 @@ struct Mation {
         return z < tmp.z;
     }
 } mat[N];
-int GetFather(int x)
-{
+int GetFather(int x) {
     return father[x] == x ? x : father[x] = GetFather(father[x]);
 }
 int main() {

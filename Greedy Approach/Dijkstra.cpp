@@ -12,16 +12,14 @@ int Dijkstra() {
             if(vis[j] == 0 && dis[j] < dis[x]) x = j;
         }
         vis[x] = 1;
-        for(int y = 1; y <= n; y++)
-        {
+        for(int y = 1; y <= n; y++) {
             dis[y] = min(dis[y], dis[x] + g[x][y]);
         }
     }
     if(dis[n] == 0x3f3f3f3f) dis[n] = -1;
     return dis[n];
 }
-int main()
-{
+int main() {
     int x, y, z;
     memset(g, 0x3f, sizeof(g));
 

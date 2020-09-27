@@ -1,5 +1,6 @@
-# include <stdio.h>
-# define N 10
+# include <iostream>
+using namespace std;
+const int N = 10;
 int BinarySearch(int* a, int x, int y, int target) {
     int lef = x, rig = y, mid;
     while(lef < rig) {
@@ -11,11 +12,12 @@ int BinarySearch(int* a, int x, int y, int target) {
 }
 int main() {
     int n = N, x, a[N];
-    for(int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
-    scanf("%d", &x);
+
+    for(int i = 0; i < n; i++) cin >> a[i];
+    cin >> x;
+
     int result = BinarySearch(a, 0, n - 1, x);
-    printf((result == 1 ? "yes" : "no"));
+
+    cout << (result == 1 ? "yes" : "no") << endl;
     return 0;
 }

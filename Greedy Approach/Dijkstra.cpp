@@ -21,8 +21,8 @@ int Dijkstra() {
 }
 int main() {
     int x, y, z;
-    memset(g, 0x3f, sizeof(g));
 
+    memset(g, 0x3f, sizeof(g));
     cin >> n >> m;
     for(int i = 1; i <= m; i++) {
         cin >> x >> y >> z;
